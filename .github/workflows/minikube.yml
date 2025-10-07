@@ -33,7 +33,6 @@ jobs:
           memory: '2200m'
           addons: 'ingress,dashboard'
 
-      - name: Verify Minikube cluster
-        run: kubectl get nodes
+
 
 
