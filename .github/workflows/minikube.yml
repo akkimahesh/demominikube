@@ -30,7 +30,7 @@ jobs:
           container-runtime: 'containerd'
           kubernetes-version: 'v1.31.0' # Use supported version
           cpus: '2'
-          memory: '4000m'
+          memory: '2200m'
           addons: 'ingress,dashboard'
 
       - name: Verify Minikube cluster
