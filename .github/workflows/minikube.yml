@@ -21,7 +21,7 @@ jobs:
       - name: Verify Docker permissions (may fail if group not yet active)
         run: docker version || echo "Docker permission check failed - confirm 'docker' group membership for runner user"
       - name: chmod permission
-        run: chmod 666 /var/run/docker.sock
+        run: sudo chmod 666 /var/run/docker.sock
       - name: Start Minikube
         uses: medyagh/setup-minikube@latest
         with:
