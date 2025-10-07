@@ -12,6 +12,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: install Docker
+        run: sudo apt install docker.io -y
       - name: Start Minikube
         uses: medyagh/setup-minikube@latest
         with:
